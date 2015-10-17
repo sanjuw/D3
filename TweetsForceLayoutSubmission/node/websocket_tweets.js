@@ -7,10 +7,10 @@ var server = ws.createServer(function (conn) {
     conn.on("text", function (str) {
         var Twitter = require('node-tweet-stream')
   , t = new Twitter({
-    consumer_key: 'zfG0CF1fjDjBq0KrOcHluS8nb',
-    consumer_secret: 'wS23qP9NOt59IQxRbN7HupH85ivoWCKEcgzOkvu2xUa8kASzjR',
-    token: '2654058938-gQwiFGEuTdkl0qoOmS4rTE47GS2pbtPFVOrP5TM',
-    token_secret: 'RJ290uBEpgriGYXwUOYhO6A1muwHSZrHWvOc4pmAqRfoD'
+    consumer_key: '',
+    consumer_secret: '',
+    token: '',
+    token_secret: ''
   })
  
         t.on('tweet', function (tweet) {
