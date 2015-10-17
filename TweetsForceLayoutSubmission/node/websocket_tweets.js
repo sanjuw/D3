@@ -4,6 +4,7 @@ var ws = require("nodejs-websocket");
 var server = ws.createServer(function (conn) {
     console.log("New connection");
 
+// key and token info removed for privacy
     conn.on("text", function (str) {
         var Twitter = require('node-tweet-stream')
   , t = new Twitter({
